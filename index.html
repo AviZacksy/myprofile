@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Adding Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>A</span>
+                <span>v</span>
+                <span>i</span>
+                <span>Z</span>
+                <span>A</span>
+                <span>c</span>
+                <span>k</span>
+                <span>s</span>
+                <span>y</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="profile-container">
+            <!-- Profile picture with size progression -->
+            <div class="profile-pic">
+                <img src="z.jpg" alt="Profile Picture Small" class="small small-left">
+                <img src="x.jpg" alt="Profile Picture Medium" class="medium medium-left">
+                <img src="n.jpg" alt="Profile Picture Main" class="main">
+                <img src="y.jpg" alt="Profile Picture Medium" class="medium medium-right">
+                <img src="a.jpg" alt="Profile Picture Small" class="small small-right">
+            </div>
+
+            <h1>ABHISHEK SINGH</h1>
+            <p class="tagline">Full Stack Developer & Android App Developer</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary-btn">Contact Me</a>
+                <a href="#gallery" class="btn secondary-btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm <span class="highlight">Abhishek Singh</span>, a passionate Full Stack Developer and Android App Developer with a keen eye for creating beautiful and functional applications. I specialize in building robust web and mobile solutions that deliver exceptional user experiences.</p>
+                    <p>My journey in software development started with a curiosity for creating digital experiences that make a difference. I believe in clean code, responsive design, and intuitive user interfaces that solve real-world problems.</p>
+                    <p>With expertise in both front-end and back-end technologies, I create comprehensive solutions that are scalable, secure, and performant. I'm constantly learning and adapting to new technologies to stay at the forefront of development.</p>
+                    <p class="skills-heading">Technical Skills:</p>
+                    <ul class="skills-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Next.js</li>
+                        <li>UI/UX Design</li>
+                        <li>Database</li>
+                        <li>Android Development</li>
+                        <li>API Integration</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>My Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item small small-left">
+                    <img src="n.png" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Web Design</h3>
+                        <p>Responsive Website</p>
+                    </div>
+                </div>
+                <div class="gallery-item medium medium-left">
+                    <img src="m.png" alt="Project 2">
+                    <div class="overlay">
+                        <h3>UI Design</h3>
+                        <p>Mobile App Interface</p>
+                    </div>
+                </div>
+                <div class="gallery-item main main-left">
+                    <img src="l.png" alt="Project 3">
+                    <div class="overlay">
+                        <h3>Development</h3>
+                        <p>E-commerce Platform</p>
+                    </div>
+                </div>
+                <div class="gallery-item medium medium-right">
+                    <img src="o.png" alt="Project 5">
+                    <div class="overlay">
+                        <h3>Branding</h3>
+                        <p>Corporate Identity</p>
+                    </div>
+                </div>
+                <div class="gallery-item small small-right">
+                    <img src="s.png" alt="Project 4">
+                    <div class="overlay">
+                        <h3>Development</h3>
+                        <p>E-commerce Platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>abhizacksy@gmail.com</p>
+                    <a href="javascript:void(0)" onclick="window.location.href='mailto:abhizacksy@gmail.com?subject=Hello%20Abhishek&body=I%20would%20like%20to%20connect%20with%20you%20regarding%20'" class="contact-link">Send Email</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 8521906763</p>
+                    <a href="tel:+918521906763" class="contact-link">Call Me</a>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm" onsubmit="return handleSubmit(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com/avifast" target="_blank" class="social-btn"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mavriksyphy?igsh=MWs4eGN6cWNqeW9yZw==" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/avifast" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/918521906763" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AviZAcksy. All rights reserved.</p>
+    </footer>
+
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            // IMPORTANT: Replace "YOUR_PUBLIC_KEY" with your actual EmailJS public key
+            // You can find your public key at: https://dashboard.emailjs.com/admin/account
+            emailjs.init("rrduX0A1ykMUXcO1G");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
